@@ -1,0 +1,84 @@
+//about section
+#aboutSection{
+    background-image: url("../images/initials.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 5vh;
+    text-align: center;
+    img{
+        max-width: 80%;
+    }
+    .me{
+        max-width: 350px;
+    }
+    .about{
+        text-align: center;
+        font-family: $nunito;
+        font-weight: 700;
+        font-size: 3vh;
+        position: absolute;
+        text-align: center;
+        margin: 0 auto;
+        // top: 0px;
+        // left: 0px;
+        padding-left:10vh ;
+        padding-top: 3vh;
+        
+    }
+    .purple_paint{
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+    }
+    .pink_paint, .orange_paint{
+        display: none;
+    }
+    .subtitle{
+        font-family: $nunito;
+        color:#37112E;
+        font-size: 2.5vh;
+        font-weight: 700;
+        padding: 3vh;
+
+    }
+    p{
+        font-size: 2.2vh;
+        color:$text-gray;
+        font-family: $alegreya;
+        font-weight: 300;
+        #vira{
+            font-weight: 700;
+            color:$purple;
+
+        }
+
+        #romanko{
+            color:#AE033C;
+            font-weight: 700;
+
+        }
+
+    }
+    .social{
+        .social-headline{
+            font-family: $alegreya;
+            font-weight: 500;
+            color:$text-gray;
+            font-size: 2.5vh;
+            padding-top: 2vh;
+            padding-bottom: 1.5vh;
+    
+        }
+        img{
+            max-width: 3.5vh;
+            margin: 8px;
+        }
+
+    }
+    
+
+
+
+}

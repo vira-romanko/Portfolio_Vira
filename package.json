@@ -24,8 +24,9 @@
   "dependencies": {
     "bootstrap": "^4.5.3",
     "browser-sync": "^2.26.13",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
     "ruby": "^0.6.1",
     "sass": "^1.27.2"
-    
   }
 }

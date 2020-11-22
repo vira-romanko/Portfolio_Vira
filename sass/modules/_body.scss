@@ -1,0 +1,86 @@
+//navigation
+nav{
+     padding: 0px !important;
+    .navbar-expand-lg{
+        padding: 0px;
+        margin:0px;
+    }
+    .navbar-nav{
+
+        padding-top: 3vh;
+        font-family: $nunito;
+        font-size: 2.5vh;
+        font-weight: 400;//regular
+    
+        
+
+        a.nav-link{
+            color:$text-gray;
+            //every second-forth child
+            &:hover:nth-child(-n+4){
+                color:#AE033C;
+                transition: all .5s;
+            }
+            //every first-third child
+            &:hover:nth-child(2n+1){
+                color:$purple;
+                transition: all .5s;
+                span{
+                    color:$text-gray;
+                }
+                
+    
+            }
+        }
+        }
+         .navbar-toggler{
+            border: 0px;
+        }
+        .navbar-collapse {
+            
+            background-color:#F2F2F2;
+            transition: all 0.9s cubic-bezier(0.69, -0.55, 0.265, 1.55);
+             //opacity: 0.5;
+        
+        }
+   
+}
+
+//Hero Section
+.hero{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align:center;
+    margin-bottom: 3vh;
+    padding-top: 5vh;
+    .ux{
+        font-size: 12vh;
+        font-weight: 700;
+        color: $dark-gray;
+        font-family: $nunito;
+
+    
+    }
+    .tagline{
+        font-size: 2.5vh;
+        color:$dark-gray;
+        font-family: $nunito;
+        font-weight: 700;
+        padding: 2vh;
+        #functionality{
+            color: $purple;
+            font-weight: 900;
+        }
+        #creativity{
+            color: $orange;
+            font-weight: 900;
+        }
+        
+    }
+
+}
+
+
+ 
+
