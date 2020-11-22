@@ -3,28 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="public/images/favicon.ico" />
     <link rel="stylesheet" href="/public/css/main.css">
-    <title>My awesome portfolio</title>
+    <title>Vira Romanko</title>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js " defer></script> 
+    
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <link rel="stylesheet"  href="https://unpkg.com/aos@next/dist/aos.css" type="text/css" />
 </head>
 <body>
-    <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+    <div id="app" class="container-fluid">
+        <nav class="navbar navbar-expand-lg  navbar-light">
+            <a class="navbar-brand" href="#"><img src="public/images/logo_nav.svg"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="wrapper-menu">
+                    <div class="line-menu half start"></div>
+                    <div class="line-menu"></div>
+                    <div class="line-menu half end"></div>
+                  </div>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Pricing</a>
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <div class="collapse navbar-collapse  justify-content-end mr-lg-5 " id="navbarNav">
+              <div class="navbar-nav" data-aos="fade-out"  data-aos-duration="2000" data-aos-easing="ease-in-out" >
+                <a class="nav-link btn from-top" href="#">Skills</a>
+                <a class="nav-link btn" href="#">About</a>
+                <a class="nav-link btn" href="#">Projects</a>
+                <a class="nav-link btn" href="#">Contact</a>
+                <a class="nav-link ml-4" href="#"> <span>|  </span>  Fr</a>
               </div>
             </div>
           </nav>
-    </div>
+
+          <section class="hero mt-3">
+              <h1 class="hidden">Hero Section</h1>
+              <h2 class="ux mt-2 " >UX/UI</h2>
+              <p class="tagline" >Keeping the balance between <span id="functionality">functionality</span> and <span id="creativity">creativity</span></p>
+          </section>
+          <section id="skillsSection">
+              <h1 class="hidden">Skills Section</h1>
+              <h2 class="bg-word">SKILLS</h2>
+          </section>
+          <section id="aboutSection">
+              <h1 class="hidden">About Section</h1>
+              <div class="purple_paint">
+                <h2 class="about">ABOUT ME</h2>
+                <img src="public/images/purple_paint.png" class=" mx-auto d-block"/> 
+              </div>
+              <div class="aboutdiv row">
+                <div class="images col-lg-6">
+                    <img src="public/images/pink_paint.png" class="pink_paint"/>
+                    <img src="public/images/portrait.png" class="img-fluid mx-auto d-block me"/>
+                    <img src="public/images/orange_paint.png" class="orange_paint"/>
     
+                  </div>
+                  
+                  <div class="text col-lg-6 align-self-center">
+                    <h3 class="subtitle">Who is this girl?</h3>
+                    <p class="pl-5 pl-lg-0 pr-5">
+                      My name is <span id="vira">Vira</span> <span id="romanko">Romanko</span> and I am a junior front-end  developer with a design passion.I believe that great design is practical and user oriented. 
+                      Aside from designing and coding, I love music, photography and wake boarding!
+                   </p>
+                   <p class="pl-5 pl-lg-0 pr-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fuga eius unde quisquam aperiam, enim recusandae quasi nam quae, molestiae perferendis deserunt ea dolor magni voluptatem aliquam aut architecto excepturi!</p>
+                   <div class="social row">
+                       <h4 class="social-headline col-md ">Social Media</h4>
+                       <div class="social-icons col-md ">
+                           <a href="https://www.linkedin.com"> <img src="public/images/linkedin.svg"/></a>
+                           <a href="https://www.dribble.com"> <img src="public/images/dribble.svg"/></a>
+                           <a href="https://www.github.com"> <img src="public/images/github.svg"/></a>
+                          
+      
+                       </div>
+      
+                   </div>
+    
+                  </div>
+
+              </div>
+              
+              
+          </section>
+          <section>
+              <h1 class="hidden">Approach</h1>
+          </section>
+          <section>
+              <h1 class="hidden">Projects</h1>
+          </section>
+          <section>
+              <h1 class="hidden">Photography</h1>
+          </section>
+          <section>
+              <h1 class="hidden">Contact</h1>
+          </section>
+
+          
+
+          
+    </div>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/skills.js"></script>
+   
+    <script type="module" src="js/main.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+           once: true,
+            duration: 5000,
+            
+        });
+       
+        
+      </script> 
 </body>
+
 </html>

@@ -1,0 +1,170 @@
+//TABLET
+
+@include media-breakpoint-up(md) {
+
+    html{
+        //logo
+    .navbar-brand{
+        img{
+            width: 180px;
+        }
+    }
+    .navbar-expand-lg .navbar-nav .nav-link{
+        padding-left: 4vh;
+        padding-right: 4vh;
+        
+    }
+ 
+
+
+.hero{
+    .ux{
+        font-size: 20vh;
+
+    }
+    .tagline{
+        font-size: 3vh;
+    }
+}
+
+#skillsSection{
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    h2{
+        opacity: 0.13;
+        font-size: 20vh;
+    }
+}
+#aboutSection{
+    img{
+        max-width: 100%;
+    }
+    .me{
+        max-width: 450px;
+    }
+    .about{
+        font-size: 4vh;
+
+    }
+    .subtitle{
+        font-size: 3.5vh;
+     }
+    p{
+        font-size: 2.8vh;
+    }
+    .social{
+        margin-top: 20px;
+        width: 45%;
+        margin: 0 auto;
+        .social-headline{
+            font-size: 2.8vh;
+            //margin-right: 15px;
+            margin-bottom: 0px;
+        }
+    
+    }
+
+}
+
+
+
+    }
+    
+   
+}
+
+//DESKTOP
+@include media-breakpoint-up(lg) {
+    html{
+        //hero section
+        nav .navbar-collapse {
+            background-color: white;
+                
+        }
+.hero{
+    display:flex;
+   flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 25vh;
+    padding-top: 15vh;
+    .ux{
+        font-size: 25vh;
+        font-weight: 700;
+        padding: 2vh;
+    }
+
+    .tagline{
+        font-size: 3vh;
+        margin: 0px;
+        padding: 2vh;
+        align-self: center;
+    }
+}
+
+#skillsSection{
+    h2{
+        opacity: 0.13;
+        font-size: 26vh;
+    }
+}
+
+
+#aboutSection{
+    img{
+        max-width: 100%;
+    }
+    .me{
+        max-width: 500px;
+    }
+    .pink_paint{
+        display:block;
+        position: absolute;
+        margin: 0 auto;
+        top: 50px;
+        right:-30px;
+        max-width: 380px;
+    }
+    .orange_paint{
+        display:block;
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        max-width: 350px;
+    } 
+  .text{
+      text-align: left;
+      padding-left: 0;
+  }
+
+    .about{
+        font-size: 4.2vh;
+        
+
+    }
+    .subtitle{
+        font-size: 4vh;
+        padding-left: 0px;
+     }
+    p{
+        font-size: 2.7vh;
+        padding-left:0px;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    .social{
+        margin-left: 0px;
+        margin-top: 40px;
+          width: auto;
+        //margin: 0 auto;
+        .social-headline{
+            font-size: 3vh;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            padding-left:0px;
+        }
+    
+    }
+
+    }
+}
+}

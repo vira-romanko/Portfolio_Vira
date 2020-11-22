@@ -1,5 +1,34 @@
-
-body{
+html, body {
     background-color:$bg;
     color: $dark-gray;
-}
+    overflow-x: hidden;
+    textarea:hover, 
+    input:hover, 
+    textarea:active, 
+    input:active, 
+    textarea:focus, 
+    input:focus,
+    button:focus,
+    button:active, 
+    button:hover,
+    label:focus,
+    .btn:active,
+    .btn.active
+  {
+      outline:none !important;
+      -webkit-appearance:none;
+      box-shadow: none !important;
+
+  }
+  .btn:focus,:active {
+    outline: none !important;
+  }
+  }
+  .hidden{
+      display:none;
+  }
+  .container-fluid{
+      margin: 0px;
+      padding: 0px;
+  }
+
