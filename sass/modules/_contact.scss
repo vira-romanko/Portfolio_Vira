@@ -1,0 +1,25 @@
+#contactSection{
+    background-color: $dark-gray;
+    color:$light-gray;
+    text-align: center;
+    // padding-top: 19vh;
+    // padding-bottom: 19vh;
+    h2{
+        font-family: $nunito;
+        font-weight: 700;
+        opacity: 0.13;
+        font-size: 13vh;
+        // position: absolute;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    object{
+        position: relative;
+        margin-right: 4vh;
+
+    }
+
+}
+        

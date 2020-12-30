@@ -1,5 +1,9 @@
 //navigation
 nav{
+    z-index: 2;
+    .navbar-brand{
+        margin-left: 10px;
+    }
      padding: 0px !important;
     .navbar-expand-lg{
         padding: 0px;
@@ -9,7 +13,7 @@ nav{
 
         padding-top: 3vh;
         font-family: $nunito;
-        font-size: 2.5vh;
+        font-size: 2.3vh;
         font-weight: 400;//regular
     
         
@@ -38,7 +42,7 @@ nav{
         }
         .navbar-collapse {
             
-            background-color:#F2F2F2;
+            background-color:#F1F1F1;
             transition: all 0.9s cubic-bezier(0.69, -0.55, 0.265, 1.55);
              //opacity: 0.5;
         
@@ -48,21 +52,30 @@ nav{
 
 //Hero Section
 .hero{
+    z-index: 2 !important;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align:center;
     margin-bottom: 3vh;
     padding-top: 5vh;
+    padding-bottom: 10vh;
+  
+    
     .ux{
+        z-index: 2; 
         font-size: 12vh;
         font-weight: 700;
         color: $dark-gray;
+        opacity: 1;
         font-family: $nunito;
-
+       span{
+           color: $purple;
+       }
     
     }
     .tagline{
+        z-index: 2; 
         font-size: 2.5vh;
         color:$dark-gray;
         font-family: $nunito;
@@ -78,9 +91,29 @@ nav{
         }
         
     }
+    
 
 }
-
+.txt{
+    z-index: 2;
+}
+.txt-type{
+    //display:block;
+    text-align: center;
+    z-index: 2;
+}
+canvas{
+    opacity: 0;
+    max-width: 100% !important;
+    //max-height: 60% !important;
+    // display: block;
+    //max-width: 100%;
+    position: absolute;
+    z-index: 1;
+    //bottom: 0;
+    left: 0;
+    top: 0px;
+  }
 
  
 

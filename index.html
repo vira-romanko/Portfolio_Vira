@@ -6,15 +6,15 @@
     <link rel="shortcut icon" type="image/png" href="public/images/favicon.ico" />
     <link rel="stylesheet" href="/public/css/main.css">
     <title>Vira Romanko</title>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js " defer></script> 
-    
+  
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"></script> 
     <link rel="stylesheet"  href="https://unpkg.com/aos@next/dist/aos.css" type="text/css" />
 </head>
 <body>
     <div id="app" class="container-fluid">
+      
         <nav class="navbar navbar-expand-lg  navbar-light">
             <a class="navbar-brand" href="#"><img src="public/images/logo_nav.svg"/></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,14 +35,43 @@
             </div>
           </nav>
 
-          <section class="hero mt-3">
+          <section id="heroSection" class="hero mt-3">
+            <canvas id="heroCanvas"></canvas>
               <h1 class="hidden">Hero Section</h1>
-              <h2 class="ux mt-2 " >UX/UI</h2>
-              <p class="tagline" >Keeping the balance between <span id="functionality">functionality</span> and <span id="creativity">creativity</span></p>
+              <h2 class="ux mt-2 " >Hello<span>.</span></h2>
+              
+              <!-- <p class="tagline" >Keeping the balance between <span id="functionality">functionality</span> and <span id="creativity">creativity</span></p> -->
+              <p class="tagline">Web Dev & ux/ui designer</p>
+              
           </section>
+         
+          
           <section id="skillsSection">
               <h1 class="hidden">Skills Section</h1>
-              <h2 class="bg-word">SKILLS</h2>
+              <h2 class="bg-word">SKILLS<span>.</span></h2>
+              <div class=" d-lg-flex flex-lg-row text-center">
+                  <div class="p-4 col-lg">
+                    <h3 >Development</h3>
+                    <object class="image-fluid"  data-aos="fade-out"  data-aos-duration="2000" data-aos-easing="ease-in-out" data="public/images/code.svg" type="image/svg+xml"></object>
+                     <!-- <img class="image-fluid"  data-aos="fade-out"  data-aos-duration="2000" data-aos-easing="ease-in-out" src="public/images/code.svg"/> -->
+                    <p>Experience in Frontend web development with HTML5 / CSS3, Javascript, NodeJS, Vue JS, Wordpress.</p>
+                  </div>
+                  <div class="p-4 col-lg">
+                    <h3 >ux/ui Design</h3>
+                    <object class="image-fluid"  data-aos="fade-out"  data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-delay="500" data="public/images/design.svg" type="image/svg+xml"></object>
+                    <!-- <img class="image-fluid" data-aos="fade-out"  data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-delay="500"src="public/images/design.svg"/> -->
+                    <p>Approaching digital media design and UX/UI layouts in a clean and dynamic way. Use of Adobe Creative package for the creative mood.</p>
+                  </div>
+                  
+                  <div class="p-4 col-lg"> 
+                    <h3>Production</h3>
+                    <object class="image-fluid"  data-aos="fade-out"  data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-delay="1000" data="public/images/production.svg" type="image/svg+xml"></object>
+                    <!-- <img class="image-fluid"  data-aos="fade-out"  data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-delay="1000" src="public/images/production.svg"/> -->
+                    <p> A positive and effective communication involves different types of media. Problem Solving solutions with Design Thinking and going outside of the box.</p>
+                  </div>
+                  
+
+              </div>
           </section>
           <section id="aboutSection">
               <h1 class="hidden">About Section</h1>
@@ -52,14 +81,15 @@
               </div>
               <div class="aboutdiv row">
                 <div class="images col-lg-6">
-                    <img src="public/images/pink_paint.png" class="pink_paint"/>
+                    <img src="public/images/pink_paint.png" class="pink_paint" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400"/>
                     <img src="public/images/portrait.png" class="img-fluid mx-auto d-block me"/>
-                    <img src="public/images/orange_paint.png" class="orange_paint"/>
+                    <img src="public/images/orange_paint.png" class="orange_paint" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="800" />
     
                   </div>
                   
                   <div class="text col-lg-6 align-self-center">
                     <h3 class="subtitle">Who is this girl?</h3>
+                    <!-- <span  data-wait="2000" data-words="[&quot;I am a curious Developer&quot;, &quot;I am a passionate Designer&quot;, &quot;I am an Explorer&quot;, &quot;I am a Creator&quot;]" class="txt-type"><span class="txt"></span></span> -->
                     <p class="pl-5 pl-lg-0 pr-5">
                       My name is <span id="vira">Vira</span> <span id="romanko">Romanko</span> and I am a junior front-end  developer with a design passion.I believe that great design is practical and user oriented. 
                       Aside from designing and coding, I love music, photography and wake boarding!
@@ -68,9 +98,9 @@
                    <div class="social row">
                        <h4 class="social-headline col-md ">Social Media</h4>
                        <div class="social-icons col-md ">
-                           <a href="https://www.linkedin.com"> <img src="public/images/linkedin.svg"/></a>
-                           <a href="https://www.dribble.com"> <img src="public/images/dribble.svg"/></a>
-                           <a href="https://www.github.com"> <img src="public/images/github.svg"/></a>
+                           <a href="https://www.linkedin.com" > <object data="public/images/linkedin.svg" type="image/svg+xml"></object></a>
+                           <a href="https://www.dribbble.com"> <object data="public/images/dribble.svg" type="image/svg+xml"></object></a>
+                           <a href="https://www.github.com"> <object data="public/images/github.svg" type="image/svg+xml"></object></a>
                           
       
                        </div>
@@ -83,34 +113,112 @@
               
               
           </section>
-          <section>
+          <!-- <section id="approachSection">
               <h1 class="hidden">Approach</h1>
-          </section>
-          <section>
+              <h2 class="approach-title">APPROACH</h2>
+              <p class="approach-subtitle">Find the clarity in the chaos</p>
+              <div class="circle-scene__sticky js-circles-sticky">
+              <div class="circles">
+                <div class="circle js-circle circle--blue" style="transform: matrix(0.245, 0, 0, 0.245, -600.5, -600.5); margin: 0px 0px 0px -30%; opacity: 1; top: 50%; transform-origin: center 50% 0px;">
+                     <span style="opacity: 1;">Explore</span>
+                </div>
+                <div class="circle js-circle circle--pink" style="transform: matrix(0.245, 0, 0, 0.245, -600.5, -600.5); margin: 0px 0px 0px -10%; opacity: 1; top: 50%; transform-origin: center 50% 0px;">
+                    <span style="opacity: 1;">Strategize</span>
+                </div>
+                <div class="circle js-circle circle--teal" style="transform: matrix(0.245, 0, 0, 0.245, -600.5, -600.5); margin: 0px 0px 0px 10%; visibility: visible; opacity: 1; top: 50%; transform-origin: center 50% 0px;">
+                    <span style="opacity: 1;">Execute</span>
+                </div>
+                <div class="circle js-circle circle--yellow" style="transform: matrix(0.245, 0, 0, 0.245, -600.5, -600.5); margin: 0px 0px 0px 30%; visibility: visible; opacity: 1; top: 50%; transform-origin: center 50% 0px;">
+                    <span style="opacity: 1;">Optimize</span>
+                </div>
+
+             </div>
+
+             <div class="circle-scene__section js-circle-scene js-scrollify" data-scene="shrink" data-section-name="shrink"></div>
+             <div class="circle-scene__section js-circle-scene js-scrollify" data-scene="split" data-section-name="split"></div>
+             <div class="circle-scene__section js-circle-scene js-scrollify" data-scene="titles-in" data-section-name="titles-in"></div>
+             <div class="circle-scene__section js-circle-scene js-scrollify" data-scene="titles-out" data-section-name="titles-out"></div>
+             <div class="circle-scene__section js-circle-scene js-scrollify" data-scene="circles-out" data-section-name="circles-out"></div>
+
+
+              </div>
+              <div class="circles-mobile">
+               more code later -->
+              <!-- </div>
+          </section> -->
+          <section id="projectsSection">
               <h1 class="hidden">Projects</h1>
+              <h2 class="projects-title ">PROJECTS<span>.</span></h2>
           </section>
-          <section>
+          <!-- <section id="photographySection">
               <h1 class="hidden">Photography</h1>
-          </section>
-          <section>
+              <h2 class="photography-title">PHOTOGRAPHY</h2>
+              <p class="photography-subtitle">Color is descriptive. Black and white is interpretive</p>
+              <div class="d-lg-flex ph-allimg ">
+                  <div class=" miloimg">
+                      <img src="public/images/img_1.jpg" class="img-fluid"/>
+                  </div>
+                  <div class="d-flex row ph-images align-self-center justify-content-around">
+                      
+                    <img src="public/images/img_2.jpg" class="img-fluid"/>
+                    <img src="public/images/img_3.jpg" class="img-fluid"/>
+                
+                      
+                       
+                        <img src="public/images/img_4.jpg" class="img-fluid"/>
+                        <img src="public/images/img_5.jpg" class="img-fluid"/>
+
+                     
+                   </div>
+
+                  </div>
+              </div>
+          </section> -->
+          <!-- <section id="contactSection">
               <h1 class="hidden">Contact</h1>
-          </section>
+              <h2 class="bg-word">CONTACT</h2>
+              <img src="public/images/back_footer.svg"/>
+              <div> -->
+                <!-- <p class="vertical align-left">Don’t be a stranger, drop me a line</p> -->
+                <!-- <h3>CONTACT ME</h3>
+                <div class="d-flex justify-content-center mt-5">
+                  <a href="https://www.linkedin.com" > <object data="public/images/linkedin_footer.svg" type="image/svg+xml"></object></a>
+                  <a href="https://www.dribbble.com" > <object data="public/images/dribbble_footer.svg" type="image/svg+xml"></object></a>
+                  <a href="https://www.github.com" > <object data="public/images/github_footer.svg" type="image/svg+xml"></object></a>
+                  <a href="https://www.facebook.com" > <object data="public/images/facebook_footer.svg" type="image/svg+xml"></object></a>
+                  <a href="https://www.linkedin.com" > <object data="public/images/email_footer.svg" type="image/svg+xml"></object></a>
+                   
+                </div>
+
+              </div>
+              
+              <div class="row justify-content-end footer">
+                  <p class="align-self-center">© 2020 by Vira Romanko</p>
+                  <img src="public/images/logo_footer.svg"/>
+
+              </div>
+
+          </section> -->
 
           
 
           
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js " defer></script> 
+    
     <script src="js/popper.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/skills.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.4/jquery.scrollify.min.js"></script>
    
     <script type="module" src="js/main.js"></script>
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-           once: true,
+           once: false,
             duration: 5000,
             
         });
