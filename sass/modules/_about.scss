@@ -7,6 +7,7 @@
     background-attachment: fixed;
     padding-top: 5vh;
     text-align: center;
+    padding-bottom: 10vh;
     img{
         max-width: 80%;
     }
@@ -17,14 +18,14 @@
         text-align: center;
         font-family: $nunito;
         font-weight: 700;
-        font-size: 3vh;
+        font-size: 4vh;
         position: absolute;
-        text-align: center;
         margin: 0 auto;
-        // top: 0px;
-        // left: 0px;
         padding-left:10vh ;
         padding-top: 3vh;
+        span{
+            color:$orange;
+        }
         
     }
     .purple_paint{
@@ -71,14 +72,52 @@
             padding-bottom: 1.5vh;
     
         }
-        img{
+        object{
             max-width: 3.5vh;
             margin: 8px;
+            &:hover{
+                box-shadow:0px 10px 10px rgba(0,0,0,0.2);
+                border-radius:100px;
+                transition: all .5s;
+            }
+        
         }
 
     }
+
+    
     
 
 
+
+}
+//APPROACH SECTION
+#approachSection{
+    //margin-top: 10vh;
+    background-color:$projects-bg;
+    padding-top: 50px;
+
+    .approach-title{
+        text-align: center;
+        font-family: $nunito;
+        color:$light-gray;
+        font-weight: 700;
+        //opacity: 74%;
+
+
+    }
+    .approach-subtitle{
+        text-align: center;
+        margin-top: 5vh;
+        font-size: 2.5vh;
+        color:$dark-gray;
+        font-family: $nunito;
+        font-weight: 700;
+        padding: 2vh;
+    }
+
+   .circle-scene__sticky{
+       display: none;
+   }
 
 }

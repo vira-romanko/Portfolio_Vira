@@ -1,15 +1,38 @@
 #skillsSection{
     background-color: $dark-gray;
-    color:$light-gray;
-    text-align: center;
-    padding-top: 19vh;
-    padding-bottom: 19vh;
-    h2{
+    height: auto;
+	
+    overflow: hidden;
+    h3{
+        color:$light-gray;
+        margin-top: 0px;
+        padding-top: 0px;
+        font-size: 3vh;
+        font-weight: 400;
+    }
+    p{
+        color: white;
+        padding: 10vh;
+        font-family: $alegreya;
+        font-size: 2.2vh;
+        line-height: 2;
+    }
+    
+   
+   object{
+       max-width: 80%;
+   }
+    .bg-word{
+        color: white;
         font-family: $nunito;
         font-weight: 700;
-        opacity: 0.13;
-        font-size: 13vh;
+        //margin-left: 8vh;
+        padding: 5vh;
+        font-size: 4vh;
+       // text-align: center;
+        span{
+            color:$purple;
+        }
     }
-
 
 }
