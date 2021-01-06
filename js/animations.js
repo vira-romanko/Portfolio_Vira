@@ -41,7 +41,7 @@ scene.fog = new THREE.FogExp2(0xffffff, 0.001);
 renderer.setClearColor(scene.fog.color);
 document.body.appendChild(renderer.domElement);
 let loader = new THREE.TextureLoader();
-loader.load("public/images/gray_box5.png", function(texture){
+loader.load("public/images/gray_box51.png", function(texture){
 //texture is loaded
 cloudGeo = new THREE.PlaneBufferGeometry(400,400);
 cloudMaterial = new THREE.MeshLambertMaterial({
