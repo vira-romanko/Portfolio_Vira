@@ -7950,9 +7950,11 @@ html, body {
     padding-left: 4vh;
     padding-right: 4vh; }
   html .hero .ux {
-    font-size: 15vh; }
+    font-size: 8vh; }
   html .hero .tagline {
     font-size: 3vh; }
+  html .hero .typy {
+    font-size: 4vh; }
   html #skillsSection div {
     padding: 15px; }
   html #skillsSection h3 {
@@ -8017,15 +8019,17 @@ html, body {
   html .hero {
     display: flex;
     position: relative;
-    flex-direction: row;
+    flex-direction: block;
     justify-content: space-evenly;
     padding-bottom: 22vh;
-    padding-top: 20vh;
+    padding-top: 5vh;
     z-index: 2; }
+    html .hero .typy {
+      font-size: 5vh; }
     html .hero .ux {
-      font-size: 25vh;
+      font-size: 16vh;
       font-weight: 700;
-      padding: 2vh; }
+      padding: 9vh; }
     html .hero .tagline {
       font-size: 3vh;
       margin: 0px;
@@ -8034,6 +8038,8 @@ html, body {
       text-align: left;
       line-height: 2;
       max-width: 30%; }
+    html .hero .typy {
+      display: block !important; }
   html #skillsSection {
     padding-top: 3vh; }
     html #skillsSection h3 {
@@ -8064,7 +8070,7 @@ html, body {
     right: 40px;
     max-width: 320px;
     transform: rotate(-15deg); }
-  html #aboutSection .text {
+  html #aboutSection .aln {
     text-align: left;
     padding-left: 0; }
   html #aboutSection .about {
@@ -8208,7 +8214,7 @@ nav {
   padding-bottom: 10vh; }
   .hero .ux {
     z-index: 2;
-    font-size: 12vh;
+    font-size: 5vh;
     font-weight: 700;
     color: #1A1A1A;
     opacity: 1;
@@ -8228,6 +8234,12 @@ nav {
     .hero .tagline #creativity {
       color: #FD9728;
       font-weight: 900; }
+  .hero .typy {
+    display: block !important;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 3vh;
+    color: #9712C8;
+    font-weight: 700; }
 
 .txt {
   z-index: 2; }

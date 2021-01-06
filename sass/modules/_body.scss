@@ -64,7 +64,7 @@ nav{
     
     .ux{
         z-index: 2; 
-        font-size: 12vh;
+        font-size: 5vh;
         font-weight: 700;
         color: $dark-gray;
         opacity: 1;
@@ -92,8 +92,17 @@ nav{
         
     }
     
-
+    .typy{
+        display: block !important;
+        font-family: $alegreya;
+        font-size: 3vh;
+        color: $purple;
+        font-weight: 700;
+        
+    }
 }
+
+
 .txt{
     z-index: 2;
 }
