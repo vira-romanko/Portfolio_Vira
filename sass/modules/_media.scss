@@ -19,13 +19,17 @@
 
 .hero{
     .ux{
-        font-size: 15vh;
+        font-size: 8vh;
 
     }
     .tagline{
         font-size: 3vh;
     }
+    .typy{
+        font-size: 4vh;
+    }
 }
+
 #skillsSection{
     div{
         padding: 15px;
@@ -147,20 +151,23 @@
             bottom: 0;
             left: 0;
           }
-       
+            
 .hero{
     display:flex;
     position: relative;
-    flex-direction: row;
+    flex-direction: block;
     justify-content: space-evenly;
     padding-bottom: 22vh;
-    padding-top: 20vh;
+    padding-top: 5vh;
     z-index: 2;
+    .typy{
+        font-size: 5vh;
+    }
    
     .ux{
-        font-size: 25vh;
+        font-size: 16vh;
         font-weight: 700;
-        padding: 2vh;
+        padding: 9vh;
     }
 
     .tagline{
@@ -172,6 +179,9 @@
         line-height: 2;
         max-width: 30%;
     }
+    .typy{
+        display: block !important;
+    }     
 }
 #skillsSection{
     padding-top: 3vh;
@@ -220,7 +230,7 @@
         max-width: 320px;
         transform: rotate(-15deg);
     } 
-  .text{
+  .aln{
       text-align: left;
       padding-left: 0;
   }
