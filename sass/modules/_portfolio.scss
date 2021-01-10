@@ -14,44 +14,4 @@
                 color:#E62B61;
             }
     }
-}
-
-
-//photography section
-
-.photography-title{
-    margin-top: 5vh;
-    text-align: center;
-    font-family: $nunito;
-    font-weight: 700;
-    font-size: 3vh; 
-}
-.photography-subtitle{
-    text-align: center;
-    margin-top: 5vh;
-    font-size: 2.5vh;
-    color:$dark-gray;
-    font-family: $nunito;
-    font-weight: 700;
-    padding: 2vh;
-}
-.ph-allimg{
-    margin:0 auto;
-    //max-width: 1225px;
-}
-.miloimg{
-    margin:0 auto;
-    max-width: 383px;
-    max-height: 600px;
-}
-.ph-images{
-
-    
-    img{
-        margin: 0 auto;
-        max-width: 340px;
-        max-height: 284px;
-        padding: 10px;
-        //padding-top: 0px;
-    }
-}
+  }

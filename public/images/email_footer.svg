@@ -1,7 +1,21 @@
 <svg id="message" xmlns="http://www.w3.org/2000/svg" width="46.124" height="46.124" viewBox="0 0 46.124 46.124">
-  <path id="Path_91" data-name="Path 91" d="M23.062,0A23.062,23.062,0,1,1,0,23.062,23.062,23.062,0,0,1,23.062,0Z" fill="#fff"/>
-  <path id="Path_87" data-name="Path 87" d="M73.83,6.755A23.062,23.062,0,0,1,106.444,39.37" transform="translate(-67.075 0)" fill="#fff"/>
-  <path id="Path_88" data-name="Path 88" d="M144.82,153.681c-.007,0-.014-.081-.021-.081H120.822c-.007,0-.014.081-.021.081l12.01,9.938Z" transform="translate(-109.749 -139.547)" fill="#1d2321"/>
-  <path id="Path_89" data-name="Path 89" d="M119.671,185.082l-13.333-11.033v14.645a1.487,1.487,0,0,0,1.344,1.5h23.977a1.488,1.488,0,0,0,1.344-1.5V174.049Z" transform="translate(-96.609 -158.125)" fill="#1d2321"/>
-  <path id="Path_90" data-name="Path 90" d="M282.074,190.2h3.138a1.488,1.488,0,0,0,1.344-1.5V174.049l-11.2,9.348Z" transform="translate(-250.161 -158.125)" fill="#1d2321"/>
+<style type="text/css">
+.st92{fill:#ffffff;}
+	#message:hover .st92{
+    cursor:pointer !important;
+    fill:#9712C8 !important;
+    transition-timing-function: ease-in;
+    transition: 1s;
+
+</style>
+
+
+  <path class="st92" id="Path_91" data-name="Path 91" d="M23.062,0A23.062,23.062,0,1,1,0,23.062,23.062,23.062,0,0,1,23.062,0Z" fill="#fff"/>
+  <path class="st92" id="Path_87" data-name="Path 87" d="M73.83,6.755A23.062,23.062,0,0,1,106.444,39.37" transform="translate(-67.075 0)" fill="#fff"/>
+  <path  id="Path_88" data-name="Path 88" d="M144.82,153.681c-.007,0-.014-.081-.021-.081H120.822c-.007,0-.014.081-.021.081l12.01,9.938Z" transform="translate(-109.749 -139.547)" fill="#1d2321"/>
+  <path  id="Path_89" data-name="Path 89" d="M119.671,185.082l-13.333-11.033v14.645a1.487,1.487,0,0,0,1.344,1.5h23.977a1.488,1.488,0,0,0,1.344-1.5V174.049Z" transform="translate(-96.609 -158.125)" fill="#1d2321"/>
+  <path  id="Path_90" data-name="Path 90" d="M282.074,190.2h3.138a1.488,1.488,0,0,0,1.344-1.5V174.049l-11.2,9.348Z" transform="translate(-250.161 -158.125)" fill="#1d2321"/>
+
 </svg>
+
+

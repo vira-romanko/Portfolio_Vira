@@ -54,9 +54,22 @@
 #contactSection{
     padding-top: 5vh;
     padding-bottom: 5vh;
-    h2{
-        opacity: 0.13;
-        font-size: 20vh;
+  
+    .bg-word{
+        font-size: 6vh;
+        padding: 5.5vh;
+    }
+    svg{
+        max-width: 50%;
+        margin-right: 3vh;
+    }
+    .sub-title {
+        font-size: 2.7vh;
+    }
+    .footer{
+        img{
+            width: 100px;
+        }
     }
 }
 
@@ -101,7 +114,7 @@
 
   #projectsSection{
     .projects-title{
-        font-size: 5vh;
+        font-size: 6vh;
         padding: 5.5vh;  
     }
 
@@ -198,10 +211,23 @@
         padding: 6vh;
     }
 }
- #contactSection{
-    h2{
-        opacity: 0.13;
-        font-size: 26vh;
+#contactSection{
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+//   .footer{
+//       padding: 0px;
+//       margin: 0px;
+//   }
+    .bg-word{
+        font-size: 8vh;
+        padding: 6vh;
+    }
+    svg{
+        max-width: 60%;
+        margin-right: 3vh;
+    }
+    .sub-title {
+        font-size: 2.7vh;
     }
 }
 
@@ -261,7 +287,7 @@
             margin-left: 0px;
             padding-left:0px;
         }
-        object{
+        svg{
             max-width: 4vh;
         }
     
@@ -270,7 +296,7 @@
     }
     #projectsSection{
         .projects-title{
-            font-size: 6vh;
+            font-size: 8vh;
             padding: 6vh;
         }
     }
@@ -282,139 +308,8 @@
             font-size: 3vh;
         }
        
-    // .circle-scene__sticky{
-    //     display: block;
-    // }
-
-    // .circle-scene {
-    //     position: relative;
-    //     height: auto;
-    //     //min-height: 100%;
-       
-    // }
-    
-    // .circle-scene__sticky {
-    //     position: sticky;
-    //     top: 0;
-    // }
-    
-    // .circles {
-    //     position: relative;
-    //    margin: 0 auto;
-    //     max-width: 1140px;
-    //     height: 80vh;
-    //     //left: 7%;
-    // }
-    // .circle {
-    //     width: 100%;
-    //     height: auto;
-    //     padding-top: 100%;
-    //     border-radius: 50%;
-    //     mix-blend-mode: multiply;
-    //     opacity: 0.7 !important;
-    //     top: 50%;
-    //     transform: translate(-50%,-50%);
-
-    // }
-
-    // .circle,.circle span {
-    //     position: absolute;
-    //     left: 50%;
-    // }
-    
-    // .circle span {
-    //     opacity: 0;
-    //     font-size: 34.2px;
-    //     font-size: 2.8vh;
-    //     font-family: $alegreya;
-    //     font-weight: 400;
-    //     line-height: 1;
-    //     bottom: -255.8px;
-    //     transform: translateX(-50%) scale(4.25)
-    // }
-    
-    // .circle.circle--blue {
-    //     background-color: #2E1458;
-
-    // }
-    
-    // .circle.circle--pink {
-    //     background-color:#E62B61;
-    // }
-    
-    // .circle.circle--teal {
-    //     visibility: hidden;
-    //     background-color: #CFE528;
-    // }
-    
-    // .circle.circle--yellow {
-    //     visibility: hidden;
-    //     background-color:#FD9728;
-    // }
-    
-    // .circle-scene__section {
-    //     width: 100%;
-    //     height: 100vh;
-    //     position: absolute;
-    //     top: 20vh;
-    // }
-    
-    // .circle-scene__section[data-scene=split] {
-    //     top: 120vh;
-    // }
-    
-    // .circle-scene__section[data-scene=titles-in] {
-    //     top: 220vh;
-    //     height: 50vh;
-    // }
-    
-    // .circle-scene__section[data-scene=titles-out] {
-    //     top: 270vh;
-    //     height: 50vh;
-    // }
-    
-    // .circle-scene__section[data-scene=circles-out] {
-    //     top: 320vh;
-    // }
+   
 }
-    
-
-
-
-// #photographySection{
-//     .photography-title{
-//         font-size: 4vh;
-//     }
-//     .miloimg{
-//         max-width: 483px;
-//         max-height: 700px;
-//     }
-//     .ph-images{
-//         max-width: 100%;
-        
-       
-//         img{
-//             margin: 0 auto;
-//             max-width: 340px;
-//             max-height: 284px;
-//             padding: 10px;
-//             padding-top: 0px;
-//             //padding-bottom: 0px;
-//         }
-//     }
-// }
-
-#contactSection{
-    // padding-bottom: 3vh;
-    // padding-top: 35vh;
-    .footer{
-        margin-top: 100px;
-        margin-right: 40px;
-    }
-    .vertical{
-        transform: rotate(90deg);
     }
 }
-
-}
-}
+    

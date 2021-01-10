@@ -7845,6 +7845,10 @@ html, body {
   margin: 0px;
   padding: 0px; }
 
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none; }
+
 #aboutSection {
   background-image: url("../images/initials.svg");
   background-position: center;
@@ -7899,10 +7903,10 @@ html, body {
     font-size: 2.5vh;
     padding-top: 2vh;
     padding-bottom: 1.5vh; }
-  #aboutSection .social object {
+  #aboutSection .social svg {
     max-width: 3.5vh;
     margin: 8px; }
-    #aboutSection .social object:hover {
+    #aboutSection .social svg:hover {
       box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
       border-radius: 100px;
       transition: all .5s; }
@@ -7928,21 +7932,73 @@ html, body {
 
 #contactSection {
   background-color: #1A1A1A;
-  color: #C3BFBF;
-  text-align: center; }
+  color: #C3BFBF; }
+  #contactSection .sub-title {
+    padding-left: 5vh; }
   #contactSection h2 {
+    color: white;
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    opacity: 0.13;
-    font-size: 13vh;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto; }
-  #contactSection object {
-    position: relative;
-    margin-right: 4vh; }
+    padding: 4vh;
+    padding-bottom: 2vh;
+    font-size: 4vh; }
+    #contactSection h2 span {
+      color: #9712C8; }
+  #contactSection svg {
+    max-width: 65%;
+    pointer-events: all;
+    z-index: 2 !important; }
+    #contactSection svg:hover {
+      box-shadow: 0px 10px 10px rgba(83, 81, 82, 0.3);
+      border-radius: 100px;
+      transition: all .5s; }
+  #contactSection .footer {
+    margin-top: 12vh;
+    border-bottom: solid 0.5px rgba(255, 255, 255, 0.08); }
+    #contactSection .footer img {
+      width: 80px;
+      padding: 5px;
+      margin-right: 2vh; }
 
+.animation-container {
+  position: fixed;
+  right: 100px;
+  top: 0;
+  max-height: 10px;
+  width: 0px;
+  z-index: 2; }
+
+.animation-container span {
+  color: #C3BFBF;
+  display: flex;
+  flex-direction: column;
+  font-size: 6vh;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  text-shadow: 0 0 1px white;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+  cursor: default;
+  z-index: 1;
+  opacity: 0;
+  will-change: transform, opacity;
+  animation-timing-function: ease-out;
+  animation-name: move; }
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: translateY(70vh); }
+  25% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 0;
+    transform: 0; } }
 @media (min-width: 768px) {
   html .navbar-brand img {
     width: 180px; }
@@ -7969,9 +8025,16 @@ html, body {
   html #contactSection {
     padding-top: 5vh;
     padding-bottom: 5vh; }
-    html #contactSection h2 {
-      opacity: 0.13;
-      font-size: 20vh; }
+    html #contactSection .bg-word {
+      font-size: 6vh;
+      padding: 5.5vh; }
+    html #contactSection svg {
+      max-width: 50%;
+      margin-right: 3vh; }
+    html #contactSection .sub-title {
+      font-size: 2.7vh; }
+    html #contactSection .footer img {
+      width: 100px; }
   html #aboutSection img {
     max-width: 100%; }
   html #aboutSection .me {
@@ -7994,7 +8057,7 @@ html, body {
   html #approachSection .approach-subtitle {
     font-size: 2.8vh; }
   html #projectsSection .projects-title {
-    font-size: 5vh;
+    font-size: 6vh;
     padding: 5.5vh; }
   html #photographySection .photography-title {
     font-size: 4vh; } }
@@ -8049,9 +8112,17 @@ html, body {
     html #skillsSection .bg-word {
       font-size: 8vh;
       padding: 6vh; }
-  html #contactSection h2 {
-    opacity: 0.13;
-    font-size: 26vh; }
+  html #contactSection {
+    padding-top: 7vh;
+    padding-bottom: 7vh; }
+    html #contactSection .bg-word {
+      font-size: 8vh;
+      padding: 6vh; }
+    html #contactSection svg {
+      max-width: 60%;
+      margin-right: 3vh; }
+    html #contactSection .sub-title {
+      font-size: 2.7vh; }
   html #aboutSection img {
     max-width: 100%; }
   html #aboutSection .me {
@@ -8092,20 +8163,15 @@ html, body {
       margin-bottom: 0px;
       margin-left: 0px;
       padding-left: 0px; }
-    html #aboutSection .social object {
+    html #aboutSection .social svg {
       max-width: 4vh; }
   html #projectsSection .projects-title {
-    font-size: 6vh;
+    font-size: 8vh;
     padding: 6vh; }
   html #approachSection .approach-title {
     font-size: 16vh; }
   html #approachSection .approach-subtitle {
-    font-size: 3vh; }
-  html #contactSection .footer {
-    margin-top: 100px;
-    margin-right: 40px; }
-  html #contactSection .vertical {
-    transform: rotate(90deg); } }
+    font-size: 3vh; } }
 #projectsSection {
   background-color: #E9E9E9; }
   #projectsSection .projects-title {
@@ -8116,36 +8182,6 @@ html, body {
     padding: 5vh; }
     #projectsSection .projects-title span {
       color: #E62B61; }
-
-.photography-title {
-  margin-top: 5vh;
-  text-align: center;
-  font-family: "Nunito", sans-serif;
-  font-weight: 700;
-  font-size: 3vh; }
-
-.photography-subtitle {
-  text-align: center;
-  margin-top: 5vh;
-  font-size: 2.5vh;
-  color: #1A1A1A;
-  font-family: "Nunito", sans-serif;
-  font-weight: 700;
-  padding: 2vh; }
-
-.ph-allimg {
-  margin: 0 auto; }
-
-.miloimg {
-  margin: 0 auto;
-  max-width: 383px;
-  max-height: 600px; }
-
-.ph-images img {
-  margin: 0 auto;
-  max-width: 340px;
-  max-height: 284px;
-  padding: 10px; }
 
 #skillsSection {
   background-color: #1A1A1A;
@@ -8325,5 +8361,85 @@ canvas {
 
 .open .line-menu.end {
   transform: rotate(-90deg) translateX(-3px); }
+
+* {
+  box-sizing: border-box; }
+  *::before, *::after {
+    box-sizing: border-box; }
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit; }
+  button.learn-more {
+    width: 12rem;
+    height: auto; }
+    button.learn-more .circle {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      background: #9712C8;
+      border-radius: 1.625rem; }
+      button.learn-more .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: #fff; }
+        button.learn-more .circle .icon.arrow {
+          transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+          left: 0.625rem;
+          width: 1.125rem;
+          height: 0.125rem;
+          background: none; }
+          button.learn-more .circle .icon.arrow::before {
+            position: absolute;
+            content: '';
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid #fff;
+            border-right: 0.125rem solid #fff;
+            transform: rotate(45deg); }
+    button.learn-more .button-text {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 1.85rem;
+      color: #E62B61;
+      font-weight: 700;
+      line-height: 1.6;
+      text-align: center;
+      font-family: "Nunito", sans-serif; }
+  button:hover .circle {
+    width: 100%; }
+    button:hover .circle .icon.arrow {
+      background: white;
+      transform: translate(1rem, 0); }
+  button:hover .button-text {
+    color: #fff; }
+
+.download {
+  font-family: "Nunito", sans-serif;
+  font-size: 3vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh; }
 
 /*# sourceMappingURL=main.css.map */

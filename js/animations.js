@@ -41,7 +41,7 @@ scene.fog = new THREE.FogExp2(0xffffff, 0.001);
 renderer.setClearColor(scene.fog.color);
 document.body.appendChild(renderer.domElement);
 let loader = new THREE.TextureLoader();
-loader.load("public/images/gray_box51.png", function(texture){
+loader.load("public/images/smoke-1.png", function(texture){
 //texture is loaded
 cloudGeo = new THREE.PlaneBufferGeometry(400,400);
 cloudMaterial = new THREE.MeshLambertMaterial({
@@ -93,6 +93,7 @@ init();
 
 
 
+
 //Typewrite effect width GASAP
 var tl = new TimelineMax({repeat:-1, yoyo:true, repeatDelay:0, onComplete:timelineDone, onCompleteParams:["test1", "test2"]});
 
@@ -101,10 +102,6 @@ tl.to(".typy", 1, {text:{value:`I'm a Curios Developer`, padSpace:true,  ease:Li
 
 tl.to(".typy", 2, {text:{value:`I am a Passionate Designer`, padSpace:true,  ease:Linear.easeNone},delay:0}); 
 tl.to(".typy", 2, {text:{value:`I am an Explorer`, padSpace:true,  ease:Linear.easeNone},delay:0}); 
-
-
-
-
 
 function timelineDone(p1, p2) {
     console.log("timeline done. params: " + p1 + " and " + p2);
