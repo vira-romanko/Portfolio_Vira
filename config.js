@@ -2,7 +2,7 @@ const config = {
     host: "us-cdbr-iron-east-05.cleardb.net",
   // host:"localhost",
    // port: 8889, // 8889 for mac
-    uname: "b50ca0ca526952",
+   uname: "b50ca0ca526952",
    //  uname:"root",
    //  pname:"root",
    pname: "699abf04", // leave blank for windows
