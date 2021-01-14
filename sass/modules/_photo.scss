@@ -1,0 +1,231 @@
+#photoSection{
+    height: 600vh;
+    margin-bottom: 18vh;
+   .photo-title{
+    font-family: $nunito;
+    font-weight: 700;
+    color: $dark-gray;
+
+    font-size: 4vh;
+    padding: 5vh;
+    span{
+        color:#CFE528;
+    }
+   }
+   .sub-title{
+    padding-left: 5vh;
+    font-family: $nunito;
+    color: $dark-gray;
+    font-weight: 700;
+}
+#pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+            perspective: 1000;
+}
+#slideContainer {
+    width: 400%; /* to contain 4 panels, each with 100% of window width */
+    height: 100%;
+}
+.panel {
+    height: 100%;
+    width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
+    float: left;
+}
+.panel-1{
+    background-color: transparent;
+  
+//    display: flex;
+//    flex-direction: row;
+.bg-purple-word{
+    position: absolute;
+    opacity: 0;
+    left: 50px;
+    z-index: -1;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 10vh;
+    font-family: $nunito;
+    font-weight: 900;
+    line-height: 3;
+    
+    color: $light-gray;
+    span{
+        color: $purple;
+    }
+   
+}
+h2{
+     font-size: 2.4vh;
+     font-weight: 900;
+     font-family: $alegreya;
+     color: $text-gray;
+     text-transform: uppercase;
+     padding: 25px;
+     padding-left: 40px;
+}
+    img{
+        //height: 100vh;
+        //max-width: 50%;
+      // float: right !important;
+       opacity: 0.5;
+    }
+    .photo-text{
+        font-size: 2.2vh;
+        color:$text-gray;
+        font-family: $alegreya;
+        font-weight: 300;
+        display: block;
+        margin: 30px;
+        
+   
+    }
+}
+.panel-2{
+   // background-color:#9712c864;
+    .bg-purple-word{
+        position: absolute;
+        opacity: 0;
+        left: 395px;
+        z-index: -1;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-size: 10vh;
+        font-family: $nunito;
+        font-weight: 900;
+        line-height: 3;
+        
+        color: $light-gray;
+        span{
+            color: #E62B61;
+        }
+       
+    }
+    h2{
+         font-size: 2.4vh;
+         font-weight: 900;
+         font-family: $alegreya;
+         color: $text-gray;
+         text-transform: uppercase;
+         padding: 25px;
+         padding-left: 40px;
+    }
+        img{
+        //     height: 100vh;
+        //     max-width: 50%;
+        //    float: right !important;
+           opacity: 0.5;
+        }
+        .photo-text{
+            display: block;
+            margin: 30px;
+            font-size: 2.2vh;
+        color:$text-gray;
+        font-family: $alegreya;
+        font-weight: 300;
+            
+       
+        }
+}
+.panel-3{
+   // background-color:#e62b6077;
+    .bg-purple-word{
+        position: absolute;
+        opacity: 0;
+        left: 755px;
+        z-index: -1;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        font-size: 10vh;
+        font-family: $nunito;
+        font-weight: 900;
+        line-height: 3;
+        
+        color: $light-gray;
+        span{
+            color:#CFE528;
+        }
+       
+    }
+    h2{
+         font-size: 2.4vh;
+         font-weight: 900;
+         font-family: $alegreya;
+         color: $text-gray;
+         text-transform: uppercase;
+         padding: 25px;
+         padding-left: 40px;
+    }
+        img{
+        //     height: 100vh;
+        //     max-width: 50%;
+        //    float: right !important;
+           opacity: 0.5;
+        }
+        .photo-text{
+            display: block;
+            margin: 40px;
+            font-size: 2.2vh;
+        color:$text-gray;
+        font-family: $alegreya;
+        font-weight: 300;
+            
+       
+        }
+}
+.panel-4{
+    // background-color:#9712c864;
+    .bg-purple-word{
+
+        position: absolute;
+        opacity: 0;
+        left: 1130px;
+        z-index: -1;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-size: 9vh;
+        font-family: $nunito;
+        font-weight: 900;
+        line-height: 3;
+        
+        color: $light-gray;
+        span{
+            color: #FD9728;
+        }
+       
+    }
+    h2{
+         font-size: 2.4vh;
+         font-weight: 900;
+         font-family: $alegreya;
+         color: $text-gray;
+         text-transform: uppercase;
+         padding: 25px;
+         padding-left: 40px;
+    }
+        img{
+        //     height: 100vh;
+        //     max-width: 50%;
+        //    float: right !important;
+           opacity: 0.5;
+        }
+        .photo-text{
+            display: block;
+            margin: 30px;
+            font-size: 2.2vh;
+        color:$text-gray;
+        font-family: $alegreya;
+        font-weight: 300;
+            
+       
+        }
+  
+}
+
+}
+.scrollmagic-pin-spacer{
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+}

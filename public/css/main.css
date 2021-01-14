@@ -7999,6 +7999,82 @@ html, body {
   100% {
     opacity: 0;
     transform: 0; } }
+#error-body {
+  background-color: #9712C8;
+  height: 100vh; }
+  #error-body img {
+    width: 200px; }
+
+.error-style {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  background-color: #9712C8; }
+
+.error-h {
+  font-size: 3vh;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  margin: 20px;
+  margin-top: 120px;
+  color: white;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif; }
+
+.error-status {
+  text-align: center;
+  margin: 0;
+  font-size: 20vh;
+  margin-bottom: 90px;
+  margin-top: 50px;
+  color: #1A1A1A;
+  --x-shadow: 0;
+  --y-shadow: 0;
+  --x:70%;
+  --y:70%;
+  transition: all 0.2s ease;
+  position: relative;
+  padding: 2rem; }
+  .error-status:hover {
+    transition: all 0.2s ease;
+    text-shadow: var(--x-shadow) var(--y-shadow) 10px #FD9728; }
+
+.go-back {
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 2vh;
+  border-radius: 50%;
+  color: white;
+  border-radius: 5vh;
+  max-width: 20%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: transparent;
+  transition: ease-out 0.2s all; }
+  .go-back:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 15px 2px rgba(0, 0, 0, 0.1), inset 0px -3px 7px 0px rgba(0, 0, 0, 0.2);
+    transition: ease-out 0.2s all;
+    color: #E62B61; }
+
+@media screen and (min-width: 768px) {
+  .error-h {
+    font-size: 4vh; }
+
+  .error-status {
+    font-size: 25vh; }
+
+  .go-back {
+    font-size: 3vh;
+    padding: 20px; } }
+@media screen and (min-width: 768px) {
+  .error-h {
+    font-size: 5vh; }
+
+  .error-status {
+    font-size: 30vh; } }
 @media (min-width: 768px) {
   html .navbar-brand img {
     width: 180px; }
@@ -8059,8 +8135,158 @@ html, body {
   html #projectsSection .projects-title {
     font-size: 6vh;
     padding: 5.5vh; }
-  html #photographySection .photography-title {
-    font-size: 4vh; } }
+  html #projectsSection .sub-title {
+    font-size: 2.7vh; }
+  html #photoSection .photo-title {
+    font-size: 6vh;
+    padding: 5.5vh; }
+  html #photoSection .sub-title {
+    font-size: 2.7vh; }
+  html #pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000; }
+  html #slideContainer {
+    width: 400%;
+    /* to contain 4 panels, each with 100% of window width */
+    height: 100%; }
+  html .panel {
+    height: 100%;
+    width: 25%;
+    /* relative to parent -> 25% of 400% = 100% of window width */
+    float: left; }
+  html .panel-1 {
+    background-color: transparent; }
+    html .panel-1 .bg-purple-word {
+      position: absolute;
+      opacity: 0;
+      left: 50px;
+      z-index: -1;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-size: 10vh;
+      font-family: "Nunito", sans-serif;
+      font-weight: 900;
+      line-height: 3;
+      color: #C3BFBF; }
+      html .panel-1 .bg-purple-word span {
+        color: #9712C8; }
+    html .panel-1 h2 {
+      font-size: 3vh;
+      font-weight: 900;
+      font-family: "Alegreya Sans", sans-serif;
+      color: #707070;
+      text-transform: uppercase;
+      padding: 25px;
+      padding-left: 40px; }
+    html .panel-1 img {
+      opacity: 0.5; }
+    html .panel-1 .photo-text {
+      font-size: 2.9vh;
+      color: #707070;
+      font-family: "Alegreya Sans", sans-serif;
+      font-weight: 300;
+      display: block;
+      margin: 30px; }
+  html .panel-2 .bg-purple-word {
+    position: absolute;
+    opacity: 0;
+    left: 395px;
+    z-index: -1;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 10vh;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    line-height: 3;
+    color: #C3BFBF; }
+    html .panel-2 .bg-purple-word span {
+      color: #E62B61; }
+  html .panel-2 h2 {
+    font-size: 3vh;
+    font-weight: 900;
+    font-family: "Alegreya Sans", sans-serif;
+    color: #707070;
+    text-transform: uppercase;
+    padding: 25px;
+    padding-left: 40px; }
+  html .panel-2 img {
+    opacity: 0.5; }
+  html .panel-2 .photo-text {
+    display: block;
+    margin: 30px;
+    font-size: 2.8vh;
+    color: #707070;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 300; }
+  html .panel-3 .bg-purple-word {
+    position: absolute;
+    opacity: 0;
+    left: 755px;
+    z-index: -1;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 10vh;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    line-height: 3;
+    color: #C3BFBF; }
+    html .panel-3 .bg-purple-word span {
+      color: #CFE528; }
+  html .panel-3 h2 {
+    font-size: 3vh;
+    font-weight: 900;
+    font-family: "Alegreya Sans", sans-serif;
+    color: #707070;
+    text-transform: uppercase;
+    padding: 25px;
+    padding-left: 40px; }
+  html .panel-3 img {
+    opacity: 0.5; }
+  html .panel-3 .photo-text {
+    display: block;
+    margin: 40px;
+    font-size: 2.8vh;
+    color: #707070;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 300; }
+  html .panel-4 .bg-purple-word {
+    position: absolute;
+    opacity: 0;
+    left: 1130px;
+    z-index: -1;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 9vh;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    line-height: 3;
+    color: #C3BFBF; }
+    html .panel-4 .bg-purple-word span {
+      color: #FD9728; }
+  html .panel-4 h2 {
+    font-size: 3vh;
+    font-weight: 900;
+    font-family: "Alegreya Sans", sans-serif;
+    color: #707070;
+    text-transform: uppercase;
+    padding: 25px;
+    padding-left: 40px; }
+  html .panel-4 img {
+    opacity: 0.5; }
+  html .panel-4 .photo-text {
+    display: block;
+    margin: 30px;
+    font-size: 2.8vh;
+    color: #707070;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 300; }
+
+  .scrollmagic-pin-spacer {
+    padding-bottom: 0px !important;
+    padding-top: 0px !important; } }
 @media (min-width: 992px) {
   html nav .navbar-collapse {
     background-color: transparent;
@@ -8117,7 +8343,8 @@ html, body {
     padding-bottom: 7vh; }
     html #contactSection .bg-word {
       font-size: 8vh;
-      padding: 6vh; }
+      padding: 6vh;
+      padding-bottom: 3vh; }
     html #contactSection svg {
       max-width: 60%;
       margin-right: 3vh; }
@@ -8165,15 +8392,180 @@ html, body {
       padding-left: 0px; }
     html #aboutSection .social svg {
       max-width: 4vh; }
+  html #photoSection .photo-title {
+    font-size: 8vh;
+    padding: 6vh;
+    padding-bottom: 3vh; }
+  html #photoSection .sub-title {
+    padding-left: 5vh;
+    font-family: "Nunito", sans-serif;
+    color: #1A1A1A;
+    font-weight: 700; }
+  html #photoSection #pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000; }
+  html #photoSection #slideContainer {
+    width: 400%;
+    /* to contain 4 panels, each with 100% of window width */
+    height: 100%; }
+  html #photoSection .panel {
+    height: 100%;
+    width: 25%;
+    /* relative to parent -> 25% of 400% = 100% of window width */
+    float: left; }
+  html #photoSection .panel-1 {
+    background-color: transparent; }
+    html #photoSection .panel-1 .bg-purple-word {
+      position: absolute;
+      opacity: 0.7;
+      left: 50px;
+      z-index: -1;
+      text-transform: uppercase;
+      letter-spacing: 80px;
+      font-size: 40vh;
+      font-family: "Nunito", sans-serif;
+      font-weight: 900;
+      line-height: 3;
+      color: #C3BFBF; }
+      html #photoSection .panel-1 .bg-purple-word span {
+        color: #9712C8; }
+    html #photoSection .panel-1 h2 {
+      font-size: 4vh;
+      font-weight: 900;
+      font-family: "Alegreya Sans", sans-serif;
+      color: #707070;
+      text-transform: uppercase;
+      padding: 25px;
+      padding-left: 30px; }
+    html #photoSection .panel-1 img {
+      height: 100vh;
+      max-width: 50%;
+      float: right !important;
+      opacity: 0.5; }
+    html #photoSection .panel-1 .photo-text {
+      font-size: 2.2vh;
+      color: #707070;
+      font-family: "Alegreya Sans", sans-serif;
+      font-weight: 300;
+      display: block;
+      margin: 40px; }
+  html #photoSection .panel-2 .bg-purple-word {
+    position: absolute;
+    opacity: 0.7;
+    left: 1450px;
+    z-index: -1;
+    text-transform: uppercase;
+    letter-spacing: 80px;
+    font-size: 40vh;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    line-height: 3;
+    color: #C3BFBF; }
+    html #photoSection .panel-2 .bg-purple-word span {
+      color: #E62B61; }
+  html #photoSection .panel-2 h2 {
+    font-size: 4vh;
+    font-weight: 900;
+    font-family: "Alegreya Sans", sans-serif;
+    color: #707070;
+    text-transform: uppercase;
+    padding: 25px;
+    padding-left: 30px; }
+  html #photoSection .panel-2 img {
+    height: 100vh;
+    max-width: 50%;
+    float: right !important;
+    opacity: 0.5; }
+  html #photoSection .panel-2 .photo-text {
+    display: block;
+    margin: 40px;
+    font-size: 2.2vh;
+    color: #707070;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 300; }
+  html #photoSection .panel-3 .bg-purple-word {
+    position: absolute;
+    opacity: 0.7;
+    left: 2890px;
+    z-index: -1;
+    text-transform: uppercase;
+    letter-spacing: 40px;
+    font-size: 40vh;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    line-height: 3;
+    color: #C3BFBF; }
+    html #photoSection .panel-3 .bg-purple-word span {
+      color: #CFE528; }
+  html #photoSection .panel-3 h2 {
+    font-size: 4vh;
+    font-weight: 900;
+    font-family: "Alegreya Sans", sans-serif;
+    color: #707070;
+    text-transform: uppercase;
+    padding: 25px;
+    padding-left: 30px; }
+  html #photoSection .panel-3 img {
+    height: 100vh;
+    max-width: 50%;
+    float: right !important;
+    opacity: 0.5; }
+  html #photoSection .panel-3 .photo-text {
+    display: block;
+    margin: 40px;
+    font-size: 2.2vh;
+    color: #707070;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 300; }
+  html #photoSection .panel-4 .bg-purple-word {
+    position: absolute;
+    opacity: 0.7;
+    left: 4380px;
+    z-index: -1;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    font-size: 40vh;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    line-height: 3;
+    color: #C3BFBF; }
+    html #photoSection .panel-4 .bg-purple-word span {
+      color: #FD9728; }
+  html #photoSection .panel-4 h2 {
+    font-size: 4vh;
+    font-weight: 900;
+    font-family: "Alegreya Sans", sans-serif;
+    color: #707070;
+    text-transform: uppercase;
+    padding: 25px;
+    padding-left: 30px; }
+  html #photoSection .panel-4 img {
+    height: 100vh;
+    max-width: 50%;
+    float: right !important;
+    opacity: 0.5; }
+  html #photoSection .panel-4 .photo-text {
+    display: block;
+    margin: 40px;
+    font-size: 2.2vh;
+    color: #707070;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 300; }
+  html .scrollmagic-pin-spacer {
+    padding-bottom: 0px !important;
+    padding-top: 0px !important; }
   html #projectsSection .projects-title {
     font-size: 8vh;
-    padding: 6vh; }
-  html #approachSection .approach-title {
-    font-size: 16vh; }
-  html #approachSection .approach-subtitle {
+    padding: 6vh;
+    padding-bottom: 3vh; }
+  html .portfolio-piece h4 {
     font-size: 3vh; } }
 #projectsSection {
-  background-color: #E9E9E9; }
+  background-color: #E9E9E9;
+  padding-bottom: 5vh; }
   #projectsSection .projects-title {
     font-family: "Nunito", sans-serif;
     font-weight: 700;
@@ -8182,7 +8574,131 @@ html, body {
     padding: 5vh; }
     #projectsSection .projects-title span {
       color: #E62B61; }
+  #projectsSection .sub-title {
+    padding-left: 5vh;
+    font-family: "Nunito", sans-serif;
+    color: #1A1A1A;
+    font-weight: 700; }
 
+.portfolio-piece {
+  height: 300px;
+  text-align: center;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden; }
+  .portfolio-piece h4 {
+    font-size: 2.7vh;
+    color: #9712C8;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    opacity: 0; }
+  .portfolio-piece:hover .overlay {
+    bottom: 0;
+    opacity: 0.9;
+    border-radius: 0; }
+  .portfolio-piece:hover h4 {
+    opacity: 1;
+    color: white;
+    z-index: 200;
+    text-decoration: none !important;
+    text-emphasis: none; }
+
+a {
+  text-decoration: none !important; }
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #1A1A1A;
+  opacity: 0.5;
+  opacity: 0;
+  border-radius: 100%; }
+
+.portfolio-content p {
+  color: #707070;
+  position: static; }
+
+.show {
+  display: block !important; }
+
+.fade-bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 1; }
+
+.modal-content {
+  overflow-y: scroll;
+  height: 90vh;
+  animation: showup 0.5s;
+  overflow-x: none; }
+
+@keyframes showup {
+  from {
+    height: 0; }
+  to {
+    height: 90vh; } }
+.close-btn {
+  position: fixed;
+  font-size: 35px;
+  right: 0;
+  top: -10px;
+  padding-right: 20px;
+  cursor: pointer;
+  color: #9712C8; }
+  .close-btn:active {
+    color: white; }
+
+.portfolio-content {
+  margin: 60px auto; }
+  .portfolio-content .promo-text {
+    font-size: 2.7vh;
+    font-weight: 700;
+    color: #707070; }
+
+.portfolio-link {
+  font-size: 15px;
+  text-decoration: underline;
+  list-style-type: square;
+  color: #E62B61 !important; }
+
+.portfolio-piece-name {
+  color: #1A1A1A;
+  border-bottom: #1A1A1A 2px solid;
+  font-size: 35px;
+  font-family: "Nunito", sans-serif; }
+
+.header {
+  width: 100%;
+  object-fit: cover; }
+  .header img,
+  .header video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+
+.tools h5 {
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 4.7vh;
+  margin-left: 3vh;
+  color: #1A1A1A; }
+
+.img-1, .img2 {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+@media screen and (min-width: 1024px) {
+  .modal-dialog {
+    max-width: 80vw; }
+
+  .portfolio-piece-name {
+    font-size: 60px; } }
 #skillsSection {
   background-color: #1A1A1A;
   height: auto;
@@ -8441,5 +8957,167 @@ button {
   font-size: 3vh;
   margin-top: 4vh;
   margin-bottom: 4vh; }
+
+#photoSection {
+  height: 600vh;
+  margin-bottom: 18vh; }
+  #photoSection .photo-title {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    color: #1A1A1A;
+    font-size: 4vh;
+    padding: 5vh; }
+    #photoSection .photo-title span {
+      color: #CFE528; }
+  #photoSection .sub-title {
+    padding-left: 5vh;
+    font-family: "Nunito", sans-serif;
+    color: #1A1A1A;
+    font-weight: 700; }
+  #photoSection #pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000; }
+  #photoSection #slideContainer {
+    width: 400%;
+    /* to contain 4 panels, each with 100% of window width */
+    height: 100%; }
+  #photoSection .panel {
+    height: 100%;
+    width: 25%;
+    /* relative to parent -> 25% of 400% = 100% of window width */
+    float: left; }
+  #photoSection .panel-1 {
+    background-color: transparent; }
+    #photoSection .panel-1 .bg-purple-word {
+      position: absolute;
+      opacity: 0;
+      left: 50px;
+      z-index: -1;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-size: 10vh;
+      font-family: "Nunito", sans-serif;
+      font-weight: 900;
+      line-height: 3;
+      color: #C3BFBF; }
+      #photoSection .panel-1 .bg-purple-word span {
+        color: #9712C8; }
+    #photoSection .panel-1 h2 {
+      font-size: 2.4vh;
+      font-weight: 900;
+      font-family: "Alegreya Sans", sans-serif;
+      color: #707070;
+      text-transform: uppercase;
+      padding: 25px;
+      padding-left: 40px; }
+    #photoSection .panel-1 img {
+      opacity: 0.5; }
+    #photoSection .panel-1 .photo-text {
+      font-size: 2.2vh;
+      color: #707070;
+      font-family: "Alegreya Sans", sans-serif;
+      font-weight: 300;
+      display: block;
+      margin: 30px; }
+  #photoSection .panel-2 .bg-purple-word {
+    position: absolute;
+    opacity: 0;
+    left: 395px;
+    z-index: -1;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 10vh;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    line-height: 3;
+    color: #C3BFBF; }
+    #photoSection .panel-2 .bg-purple-word span {
+      color: #E62B61; }
+  #photoSection .panel-2 h2 {
+    font-size: 2.4vh;
+    font-weight: 900;
+    font-family: "Alegreya Sans", sans-serif;
+    color: #707070;
+    text-transform: uppercase;
+    padding: 25px;
+    padding-left: 40px; }
+  #photoSection .panel-2 img {
+    opacity: 0.5; }
+  #photoSection .panel-2 .photo-text {
+    display: block;
+    margin: 30px;
+    font-size: 2.2vh;
+    color: #707070;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 300; }
+  #photoSection .panel-3 .bg-purple-word {
+    position: absolute;
+    opacity: 0;
+    left: 755px;
+    z-index: -1;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 10vh;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    line-height: 3;
+    color: #C3BFBF; }
+    #photoSection .panel-3 .bg-purple-word span {
+      color: #CFE528; }
+  #photoSection .panel-3 h2 {
+    font-size: 2.4vh;
+    font-weight: 900;
+    font-family: "Alegreya Sans", sans-serif;
+    color: #707070;
+    text-transform: uppercase;
+    padding: 25px;
+    padding-left: 40px; }
+  #photoSection .panel-3 img {
+    opacity: 0.5; }
+  #photoSection .panel-3 .photo-text {
+    display: block;
+    margin: 40px;
+    font-size: 2.2vh;
+    color: #707070;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 300; }
+  #photoSection .panel-4 .bg-purple-word {
+    position: absolute;
+    opacity: 0;
+    left: 1130px;
+    z-index: -1;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 9vh;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    line-height: 3;
+    color: #C3BFBF; }
+    #photoSection .panel-4 .bg-purple-word span {
+      color: #FD9728; }
+  #photoSection .panel-4 h2 {
+    font-size: 2.4vh;
+    font-weight: 900;
+    font-family: "Alegreya Sans", sans-serif;
+    color: #707070;
+    text-transform: uppercase;
+    padding: 25px;
+    padding-left: 40px; }
+  #photoSection .panel-4 img {
+    opacity: 0.5; }
+  #photoSection .panel-4 .photo-text {
+    display: block;
+    margin: 30px;
+    font-size: 2.2vh;
+    color: #707070;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 300; }
+
+.scrollmagic-pin-spacer {
+  padding-bottom: 0px !important;
+  padding-top: 0px !important; }
 
 /*# sourceMappingURL=main.css.map */
