@@ -54,7 +54,7 @@ LEFT JOIN tbl_tools t ON
   t.tools_id = link.tools_id
 WHERE
   ID = ${req.params.id};`;
-  console.log("we are getting data");
+  // console.log("we are getting data");
   connect.query(query, (err, result) => {
     if (err) {
       throw err;
