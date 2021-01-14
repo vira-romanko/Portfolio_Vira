@@ -17,10 +17,6 @@
     "url": "https://github.com/vira-romanko/Portfolio_Vira/issues"
   },
   "homepage": "https://github.com/vira-romanko/Portfolio_Vira#readme",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0"
-  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "bootstrap": "^4.5.3",
@@ -31,6 +27,8 @@
     "mysql": "^2.18.1",
     "popper.js": "^1.16.1",
     "ruby": "^0.6.1",
-    "sass": "^1.27.2"
+    "sass": "^1.27.2",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
   }
 }
