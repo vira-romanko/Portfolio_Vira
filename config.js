@@ -7,6 +7,7 @@ const config = {
    //  pname:"root",
    pname: "699abf04", // leave blank for windows
    database: "heroku_eab575b93b335ca",
+   //for local environment
    //database:"db_portfolio"
 }
 
