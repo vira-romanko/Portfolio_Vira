@@ -11,14 +11,14 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname + '/views'));
 
-app.use('/', require('./routes/index.js'));
+
 
 //body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
-
-app.use(express.static('public'));
+app.use('/', require('./routes/index.js'));
+//app.use(express.static('public'));
 
 
 app.use((req, res, next) =>{
