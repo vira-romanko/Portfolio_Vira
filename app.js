@@ -3,7 +3,7 @@ const path = require('path');
 const hbs = require('hbs');
 const bodyParser = require("body-parser");
 const port = process.env.PORT || 3001;
-
+const timeout = require('connect-timeout');
 const app = express();
 
 app.use(express.static(path.join(__dirname, '/public')));
@@ -20,7 +20,11 @@ app.use(bodyParser.json());
 app.use('/', require('./routes/index.js'));
 //app.use(express.static('public'));
 
-
+app.use(timeout('5s'));
+app.use(haltOnTimedout);
+ function haltOnTimedout (req, res, next) {
+  if (!req.timedout) next()
+}
 app.use((req, res, next) =>{
   var err = new Error('Not Found');
   err.status = 404;
