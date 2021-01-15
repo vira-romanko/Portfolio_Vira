@@ -5,7 +5,6 @@
   "main": "app.js",
   "engines": {
     "node": "12.11.1"
-
   },
   "scripts": {
     "start": "node app"
@@ -25,6 +24,7 @@
     "body-parser": "^1.19.0",
     "bootstrap": "^4.5.3",
     "browser-sync": "^2.26.13",
+    "connect-timeout": "^1.9.0",
     "express": "^4.17.1",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
