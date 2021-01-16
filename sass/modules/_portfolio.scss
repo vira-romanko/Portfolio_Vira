@@ -182,3 +182,142 @@
       font-size: 60px;
     }
   }
+  //New version
+#projectsSection{
+  .portfolio{
+    .members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+      align-items: center;
+    
+      .member {
+        margin: 20px 20px;
+        position: relative;
+        // display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    
+        .potrait {
+          height: 50vw;
+          width: 80vw;
+          object-fit: cover;
+          border: solid 1px;
+          border-radius: 20px;
+          opacity: 0.8;
+          transition: all 0.3s ease;
+        }
+    
+        p {
+          text-align: center;
+        }
+      }
+      
+      .member-social {
+        margin: 20px 0px;
+        display: flex;
+        justify-content: space-around;
+        // position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+    
+      .member-social img {
+        margin: 0 auto;
+        width: 40px;
+        height: 40px;
+        opacity: 0.8;
+        transition: all 0.3s ease;
+      }
+    
+      .member-social img:hover {
+        opacity: 1;
+      }
+    
+      
+    
+      .member:hover .potrait {
+        opacity: 1;
+      }
+    
+      .member:active .potrait {
+        opacity: 1;
+      }
+    
+      .member:hover .member-name {
+        display: block;
+      }
+    
+      .member:active .member-name {
+        display: block;
+      }
+    
+      .member-name h4 {
+        font-size: 25px;
+        margin: 20px 0;
+        font-weight: 100;
+      }
+    }
+    
+    .bio-wrapper {
+      display: none;
+      flex-direction: column;
+      width: 90vw;
+      height: 700px;
+      position: absolute;
+      z-index: 1;
+      background: black;
+    
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    
+      .info {
+        position: absolute;
+        bottom: 0;
+    
+        h4 {
+          font-size: 8vw;
+        }
+    
+        p {
+          margin: 40px;
+          font-size: 15px;
+        }
+      }
+    
+      span {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 40px;
+        z-index: 1;
+        cursor: pointer;
+      }
+    
+      
+        img {
+          margin: 10px;
+        }
+      }
+    }
+    
+    .blurry_background {
+      display: none;
+      width: 100vw;
+      margin: 0 auto;
+      height: 2000px;
+      position: absolute;
+      background: black;
+      opacity: 0.8;
+      z-index: 1;
+      filter: blur(10px);
+    }
+  }
+ 
+
+
