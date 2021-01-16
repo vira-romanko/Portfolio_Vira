@@ -8699,6 +8699,94 @@ a {
 
   .portfolio-piece-name {
     font-size: 60px; } }
+#projectsSection .portfolio .members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  align-items: center; }
+  #projectsSection .portfolio .members .member {
+    margin: 20px 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease; }
+    #projectsSection .portfolio .members .member .potrait {
+      height: 50vw;
+      width: 80vw;
+      object-fit: cover;
+      border: solid 1px;
+      border-radius: 20px;
+      opacity: 0.8;
+      transition: all 0.3s ease; }
+    #projectsSection .portfolio .members .member p {
+      text-align: center; }
+  #projectsSection .portfolio .members .member-social {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    width: 100%; }
+  #projectsSection .portfolio .members .member-social img {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
+    transition: all 0.3s ease; }
+  #projectsSection .portfolio .members .member-social img:hover {
+    opacity: 1; }
+  #projectsSection .portfolio .members .member:hover .potrait {
+    opacity: 1; }
+  #projectsSection .portfolio .members .member:active .potrait {
+    opacity: 1; }
+  #projectsSection .portfolio .members .member:hover .member-name {
+    display: block; }
+  #projectsSection .portfolio .members .member:active .member-name {
+    display: block; }
+  #projectsSection .portfolio .members .member-name h4 {
+    font-size: 25px;
+    margin: 20px 0;
+    font-weight: 100; }
+#projectsSection .portfolio .bio-wrapper {
+  display: none;
+  flex-direction: column;
+  width: 90vw;
+  height: 700px;
+  position: absolute;
+  z-index: 1;
+  background: black; }
+  #projectsSection .portfolio .bio-wrapper img {
+    width: 100%;
+    object-fit: cover; }
+  #projectsSection .portfolio .bio-wrapper .info {
+    position: absolute;
+    bottom: 0; }
+    #projectsSection .portfolio .bio-wrapper .info h4 {
+      font-size: 8vw; }
+    #projectsSection .portfolio .bio-wrapper .info p {
+      margin: 40px;
+      font-size: 15px; }
+  #projectsSection .portfolio .bio-wrapper span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 40px;
+    z-index: 1;
+    cursor: pointer; }
+  #projectsSection .portfolio .bio-wrapper img {
+    margin: 10px; }
+#projectsSection .blurry_background {
+  display: none;
+  width: 100vw;
+  margin: 0 auto;
+  height: 2000px;
+  position: absolute;
+  background: black;
+  opacity: 0.8;
+  z-index: 1;
+  filter: blur(10px); }
+
 #skillsSection {
   background-color: #1A1A1A;
   height: auto;
