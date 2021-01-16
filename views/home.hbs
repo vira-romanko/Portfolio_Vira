@@ -168,7 +168,7 @@
               <h2 class="projects-title ">PROJECTS<span>.</span></h2> 
               <p class="sub-title">Take a look at some of my works and explorations</p>
                 <div class="portfolio text-center pb-3">
-                   <section class="myProjects">
+                   {{!-- <section class="myProjects">
         <div class="members d-flex row">
           <div class="blurry_background"></div>
           <div class="bio-wrapper">
@@ -180,22 +180,25 @@
             </div>
           </div>
         </div>
-      </section>
-                {{!-- <div class=" d-flex "> --}}
-                  
-                    {{!-- <img class="img-fluid" src="images/portfolio_piece/project_thumbnails/digital_poster.jpg"/> --}}
-                  {{!-- <img class="img-fluid" src="images/portfolio_piece/project_thumbnails/digital_lights.jpg"/>
-                  <img class="img-fluid" src="images/portfolio_piece/project_thumbnails/gymbabe.jpg"/>
-                  <img class="img-fluid" src="images/portfolio_piece/project_thumbnails/roku.jpg"/>
-                  <img class="img-fluid" src="images/portfolio_piece/project_thumbnails/teentalks.jpg"/>
-                  <img class="img-fluid" src="images/portfolio_piece/project_thumbnails/smarthome.jpg"/>
-                  <img class="img-fluid" src="images/portfolio_piece/project_thumbnails/ontarioturism.jpg"/> --}}
+      </section> --}}
+                 <div class="portfolio text-center pb-3">
+                <div class="row">
+                    {{#each project}}
+                    <a href="{{ID}}"
+                        class="portfolio-piece d-flex align-items-center shadow justify-content-center col-md-4 {{field_name}}"
+                        style="background-image: url(../{{thumbnail}});">
+                        <h4 class=" display-4">{{name}}</h4>
+                        <div class="overlay"></div>
+                    </a>
+                    {{/each}}
                     {{!-- </div> <button class="mt-5">See more</button> --}}
-                {{!-- </div> --}}
+                </div>
             </div>
         </div>
+                    
+         
         </section>
-{{!-- <div class="modal " id="exampleModalCenter">
+        <div class="modal" id="exampleModalCenter">
         <div class="fade-bg  close-lightbox"></div>
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content container p-0">
@@ -210,7 +213,7 @@
                                 <h2 class="pb-3 mb-3 portfolio-piece-name">#</h2>
                                 <ul class="link-wrapper p-0">
                                 </ul>
-                                <p class="my-3 promo-text "></p>
+                                <p class="my-3 promo-text"></p>
                             </div>
                             <div class="col-lg-4 text-center">
                                 <img class="img-fluid  img-1" src="images/portfolio_piece/gymbabe/header.jpg"
@@ -238,8 +241,8 @@
 
             </div>
         </div>
-    </div>             --}}
-        {{!-- Here the project code goes --}}
+    </div>          
+
 <section id="photoSection">
 <h1 class="hidden">Projects</h1>
  <h2 class="photo-title ">APPROACH<span>.</span></h2> 
