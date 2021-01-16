@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69">
-  <g id="Back_to_top" data-name="Back to top" transform="translate(-1785.415 -8970.526)">
-    <circle id="to_top_circle" cx="34.5" cy="34.5" r="34.5" transform="translate(1785.415 8970.526)" fill="rgba(112,107,116,0.35)"/>
-    <g id="arrow_back_to_top" transform="translate(1802.682 9015.148) rotate(-90)">
-      <path id="Path_37" data-name="Path 37" d="M19.524,19.523,4.247,34.8A2.488,2.488,0,0,1,.729,31.281L14.246,17.764.729,4.247A2.488,2.488,0,1,1,4.248.729L19.524,16.005a2.488,2.488,0,0,1,0,3.518Z" transform="translate(0 0)" fill="#fff"/>
-    </g>
-  </g>
-</svg>
