@@ -1,9 +1,9 @@
 # PORTFOLIO WEBSITE
 # Roku Flashback Streaming App
 
-![Image description](/images/logo.svg)
+![Image description](public/images/logo_nav.svg)
 
-This is my Portfolio Website. You can find live version at https://wwww.viraromanko.com
+This is my Portfolio Website. You can find live version at https://www.viraromanko.com
 
 
 ## SET UP
