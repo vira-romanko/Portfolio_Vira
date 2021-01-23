@@ -1,5 +1,4 @@
 # PORTFOLIO WEBSITE
-# Roku Flashback Streaming App
 
 ![Image description](public/images/logo_nav.svg)
 
