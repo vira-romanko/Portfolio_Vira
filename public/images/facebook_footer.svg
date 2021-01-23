@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="facebook-footer" width="46.121" height="46.121" viewBox="0 0 46.121 46.121">
+<style type="text/css">
+.st91{fill:#ffffff;}
+	#facebook-footer:hover .st91{
+    cursor:pointer !important;
+    fill:#E62B61 !important;
+    transition-timing-function: ease-in;
+    transition: 1s;
+
+</style>
+  <path id="facebook" class="st91" d="M46.121,23.061A23.061,23.061,0,1,0,23.061,46.121c.135,0,.27,0,.405-.009V28.168H18.511V22.394h4.954V18.142c0-4.927,3.009-7.612,7.4-7.612a40.246,40.246,0,0,1,4.441.225v5.153H32.285c-2.387,0-2.856,1.135-2.856,2.8v3.675h5.72L34.4,28.159H29.429v17.07A23.068,23.068,0,0,0,46.121,23.061Z" fill="#fff"/>
+</svg>

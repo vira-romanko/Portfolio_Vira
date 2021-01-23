@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="linkedin-footer" width="43.333" height="43.333" viewBox="0 0 43.333 43.333">
+<style type="text/css">
+.st89{fill:#ffffff;}
+	#linkedin-footer:hover .st89{
+    cursor:pointer !important;
+    fill:#9712C8 !important;
+    transition-timing-function: ease-in;
+    transition: 1s;
+
+</style>
+  <path id="linkedin" class="st89" d="M21.666,0A21.666,21.666,0,1,0,43.333,21.666,21.669,21.669,0,0,0,21.666,0Zm-6.3,32.753H10.094V16.878H15.37ZM12.732,14.71H12.7a2.75,2.75,0,1,1,.069-5.485,2.751,2.751,0,1,1-.035,5.485ZM34.4,32.753H29.121V24.261c0-2.134-.764-3.59-2.673-3.59A2.889,2.889,0,0,0,23.74,22.6a3.614,3.614,0,0,0-.174,1.288v8.865H18.291s.069-14.386,0-15.875h5.276v2.248a5.239,5.239,0,0,1,4.755-2.62c3.472,0,6.075,2.269,6.075,7.145Zm0,0" fill="#f7f7f7"/>
+</svg>
